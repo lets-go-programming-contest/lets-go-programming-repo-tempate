@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"os"
 
 	"github.com/Tuc0Sa1amanka/task-1/pkg/calculator"
 )
@@ -14,18 +13,18 @@ func main() {
 
 	if _, err := fmt.Scanln(&a); err != nil {
 		fmt.Println("Invalid first operand")
-		os.Exit(1)
+		return
 	}
 
 	if _, err := fmt.Scanln(&b); err != nil {
 		fmt.Println("Invalid second operand")
-		os.Exit(1)
+		return
 	}
 
 	_, err := fmt.Scanf("%c", &c)
 	if err != nil || !calculator.IsOperator(c) {
 		fmt.Println("Invalid operation")
-		os.Exit(1)
+		return
 	}
 
 	switch c {
