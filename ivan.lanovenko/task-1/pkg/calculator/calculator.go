@@ -12,7 +12,7 @@ func Dif(a int, b int) int {
 
 func Div(a int, b int) (int, error) {
 	if b == 0 {
-		return 1, errors.New("division by zero")
+		return 1, errors.New("Division by zero")
 	}
 	return a / b, nil
 }
