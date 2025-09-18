@@ -30,17 +30,17 @@ func main() {
 
 	switch c {
 	case '+':
-		fmt.Print(calculator.Sum(a, b))
+		fmt.Println(calculator.Sum(a, b))
 	case '-':
-		fmt.Print(calculator.Dif(a, b))
+		fmt.Println(calculator.Dif(a, b))
 	case '*':
-		fmt.Print(calculator.Mul(a, b))
+		fmt.Println(calculator.Mul(a, b))
 	case '/':
 		res, err := calculator.Div(a, b)
 		if err != nil {
 			fmt.Println(err)
-			os.Exit(1)
+			return
 		}
-		fmt.Print(res)
+		fmt.Println(res)
 	}
 }
