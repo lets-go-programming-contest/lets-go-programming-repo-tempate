@@ -8,9 +8,9 @@ import (
 )
 
 func main() {
-	var a int = 0
-	var b int = 0
-	var c rune = '0'
+	var a int
+	var b int
+	var c rune
 
 	if _, err := fmt.Scanln(&a); err != nil {
 		fmt.Println("Invalid first operand")
