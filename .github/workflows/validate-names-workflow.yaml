@@ -36,4 +36,3 @@ jobs:
           done
           
           echo "All commit messages have the correct prefix: $PR_PREFIX"
-      
